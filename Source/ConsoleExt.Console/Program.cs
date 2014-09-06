@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleExt.Console
+﻿namespace ConsoleExt.Console
 {
-    class Program
+    using ConsoleExt.Main;
+
+    public class Program
     {
-        static void Main(string[] args)
+        internal static void Main(string[] args)
         {
+            ConsoleExtend.Instance.Output.WriteMessage("Echo", ConsoleMessageType.Success);
+            var output = ConsoleExtend.Instance.Input.SafeRead<long>();
         }
     }
 }
