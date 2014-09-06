@@ -48,5 +48,25 @@
             Console.WriteLine(message);
             Console.ResetColor();
         }
+
+        public static void RemoveScrollBars()
+        {
+            Console.BufferHeight = Console.WindowHeight;
+            Console.BufferWidth = Console.WindowWidth;
+        }
+
+        public static void PrintStringOnPosition(int x, int y, string printString, ConsoleColor color)
+        {
+            Console.SetCursorPosition(x, y);
+            Console.ForegroundColor = color;
+            Console.Write(printString);
+        }
+
+        public static void PrintStringOnPosition(Point2D point, string printString, ConsoleColor color)
+        {
+            Console.SetCursorPosition(point.X, point.Y);
+            Console.ForegroundColor = color;
+            Console.Write(printString);
+        }
     }
 }
