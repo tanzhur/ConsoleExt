@@ -40,9 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsoleExtend.cs" />
-    <Compile Include="Modules\ConsoleInputHelper.cs" />
+    <Compile Include="Modules\InputModule.cs" />
     <Compile Include="ConsoleMessageType.cs" />
-    <Compile Include="Modules\ConsoleOutputHelper.cs" />
+    <Compile Include="Modules\OutputModule.cs" />
     <Compile Include="Extentions\StringExtentions.cs" />
     <Compile Include="Models\Point2D.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
