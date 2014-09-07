@@ -1,9 +1,9 @@
-﻿namespace ConsoleExt.Main
+﻿namespace ConsoleExt.Main.Modules
 {
     using System;
     using ConsoleExt.Main.Extentions;
 
-    public class ConsoleInputHelper
+    public class InputModule
     {
         private const string ReadDefaultGreetingMessage = "Hello! Please enter a desired input.";
         private const string ReadDefaultErrorMessage = "Invalid input. Please try again.";

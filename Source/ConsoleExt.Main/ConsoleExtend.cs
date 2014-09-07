@@ -1,15 +1,17 @@
 ﻿namespace ConsoleExt.Main
 {
+    using ConsoleExt.Main.Modules;
+
     public class ConsoleExtend
     {
         private static ConsoleExtend instance;
-        private readonly ConsoleInputHelper inputModule;
-        private readonly ConsoleOutputHelper outputModlue;
+        private readonly InputModule inputModule;
+        private readonly OutputModule outputModlue;
 
         public ConsoleExtend()
         {
-            this.inputModule = new ConsoleInputHelper();
-            this.outputModlue = new ConsoleOutputHelper();
+            this.inputModule = new InputModule();
+            this.outputModlue = new OutputModule();
         }
 
         public static ConsoleExtend Instance
@@ -20,12 +22,12 @@
             }
         }
 
-        public ConsoleOutputHelper Output
+        public OutputModule Output
         {
             get { return this.outputModlue; }
         }
 
-        public ConsoleInputHelper Input
+        public InputModule Input
         {
             get { return this.inputModule; }
         }
